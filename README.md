@@ -4,6 +4,8 @@ Project Description:
 
 This project involves developing an image classification model to detect cracks in images using deep learning techniques. The model is built using the Keras framework and is trained and validated on a dataset of images stored on Google Drive. Below are the key components and steps involved in this project:
 
+Dataset Used: https://www.kaggle.com/datasets/wardaddy24/marble-surface-anomaly-detection-2
+
 1. Data Loading and Preprocessing:
 
  - Google Drive Integration: Mounted Google Drive to access the dataset stored in specific directories (train and test).
@@ -19,7 +21,7 @@ This project involves developing an image classification model to detect cracks 
 
  - Dataframe Creation: Built a dataframe containing image paths and their corresponding labels. This facilitated easy access and manipulation of the dataset for training and validation.
    
-7. Model Architecture:
+4. Model Architecture:
 
  - CNN Model Design: Designed a Convolutional Neural Network (CNN) using Keras' Sequential API. The architecture included:
     - Convolutional layers with ReLU activation
@@ -28,17 +30,17 @@ This project involves developing an image classification model to detect cracks 
     - Fully connected Dense layers
     - Output layer with softmax activation for multi-class classification
       
-9. Model Compilation and Training:
+5. Model Compilation and Training:
 
  - Compilation: Compiled the model with Adam optimizer and categorical cross-entropy loss function. Implemented early stopping to monitor validation loss and prevent overfitting.
  - Training: Trained the model on the training dataset and validated it using the validation dataset. Plotted training and validation accuracy and loss curves to visualize the model's performance.
 
-11. Model Evaluation and Visualization:
+6. Model Evaluation and Visualization:
 
  - Prediction Visualization: Implemented functions to visualize a batch of augmented images and model predictions. Used matplotlib for plotting and OpenCV for image handling.
  - Performance Metrics: Evaluated model performance using accuracy metrics and confusion matrix. Visualized loss and accuracy curves to assess training progress.
 
-12. Model Saving:
+7. Model Saving:
 
  - Model Serialization: Saved the trained model to Google Drive for future use and deployment.
  - Key Functions and Components:
